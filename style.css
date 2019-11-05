@@ -1,0 +1,74 @@
+.wrapper {
+  margin: 0 auto;
+  font-family: Roboto,Segoe UI,"Tahoma, sans-serif";
+}
+
+.input_area {
+  display: block;
+  width: 800px;
+  height: 300px;
+  margin: 10px auto 10px;
+  padding: 10px;
+  font-size: 18px;
+  color: #444;
+}
+
+.keyboard {
+  width: 704px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.keyboard--key {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background: #3a424e;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: border-radius .3s,background .3s;
+  transition: border-radius .3s,background .3s;
+}
+
+.keyboard--key-wide {
+  width: 86px;
+}
+
+.keyboard--key-wide100 {
+  width: 100px;
+}
+
+.keyboard--key-wider {
+  width: 44px;
+}
+
+.keyboard--key-widest {
+  width: 330px;
+}
+
+.keyboard--key:hover {
+  background: #251c1c;
+}
+
+.keyboard--key.keyboard--key-active {
+  background-color: #5571ee;
+  border-radius: 50px;
+}
+/*# sourceMappingURL=style.css.map */
