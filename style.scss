@@ -1,0 +1,68 @@
+.wrapper {    
+    margin: 0 auto;
+    font-family: Roboto,Segoe UI,"Tahoma, sans-serif"
+}
+
+
+.input_area {
+    display: block;
+    width: 800px;
+    height: 300px;
+    margin: 10px auto 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: #444
+}
+
+.keyboard {
+    width: 704px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &--key {
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin-left: 6px;
+        margin-bottom: 6px;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        background: #3a424e;
+        border-radius: 3px;
+        cursor: pointer;
+        user-select: none;
+        transition: border-radius .3s,background .3s;
+        &-wide {
+            width: 86px;
+        }
+        &-wide100 {
+            width: 100px;
+        }
+        &-wider {
+            width:44px;
+        }
+        &-widest {
+            width:330px;
+        }
+        &:hover {
+            background: #251c1c;
+        }
+
+    }
+}
+
+.keyboard--key.keyboard--key-active {
+    background-color: #5571ee;
+    border-radius: 50px
+
+}
+
+.notes {
+    margin: 10px auto;
+    width: 704px;
+    text-align: center;
+}
