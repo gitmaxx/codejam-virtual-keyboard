@@ -267,14 +267,18 @@ class Keyboard {
 window.addEventListener('DOMContentLoaded', () => {
   const wrapper = document.createElement('div');
   const inputArea = document.createElement('textarea');
+  const notes = document.createElement('div');
   wrapper.classList.add('wrapper');
   inputArea.classList.add('input_area');
+  notes.classList.add('notes');
+  notes.innerHTML = 'Press Ctrl+Alt to switch between languages';
   inputArea.setAttribute('rows', 6);
   inputArea.setAttribute('cols', 60);
   document.body.appendChild(wrapper);
   wrapper.appendChild(inputArea);
   const myKeyboard = new Keyboard();
   myKeyboard.init(wrapper, inputArea);
+  wrapper.appendChild(notes);
   document.addEventListener('keydown', (event) => {
     document.querySelector('.keyboard').dispatchEvent(new CustomEvent('kbd', {
       detail: {
